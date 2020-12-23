@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicional Para pais</title>
+</head>
+<body>
+
+    <h1>Qual Seu pais ?</h1>
+    Escreva qual seu pais: <input type="text" name="pais" id="pais"><input type="button" value="Buscar" onclick="buscar()">
+    <div id="res">Resultado</div>
+
+    <script>
+
+        
+        function buscar(){
+
+            var paisText = document.querySelector('input#pais')
+            var paisMinusculo = paisText.value
+            var res = document.querySelector('div#res')
+
+            if(paisMinusculo.toLocaleLowerCase() == "brasil"){
+            
+                res.innerHTML = 'Voce é Brasileiro'            
+            }
+            else{
+                res.innerHTML = 'Tu é de fora'
+            }
+
+        }
+        
+
+    </script>
+    
+</body>
+</html>

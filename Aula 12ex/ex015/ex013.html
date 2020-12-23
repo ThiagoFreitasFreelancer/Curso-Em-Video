@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="./Jquey.js/Jquery.js"></script>
+    <script src="./igorescobar-jQuery-Mask-Plugin-535b4e4/jquery.mask.js"></script>
+</head>
+<body>
+    <header>
+
+        <h1>Idade</h1>
+
+    </header>
+
+    <section>
+
+        <div>
+
+            <span>Ano de nascimento ? 
+                <input class="numero" type="text" onclick="carregarMascara(this)">
+            </br>
+                <span style="margin-top: 20%;">Homen</span><input type="radio" name="gender" value="1">
+                <span>Mulher</span><input type="radio" name="gender" value="2">
+            </br>
+                <input style="margin-top: 5%;" type="button" value="Enviar" onclick="carregarinformacoes()">
+            </span>
+
+        </div>
+        <div id="informacoes" style="text-align: center;">
+
+            Preencha as informaçoes a cima
+
+        </div>
+
+    </section>
+
+    <footer>
+
+        <p>&copy;DES corporation</p>
+
+    </footer>
+
+    <script src="script.js"></script>
+    
+    
+</body>
+</html>
